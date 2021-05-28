@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="CocaColaCSS.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <title>Coca-Cola</title>
 </head>
 <body>
@@ -32,7 +33,38 @@
                 <a href="#">Learn More</a>
             </div>
         </div>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="cocacola1.png"></div>
+            <div class="swiper-slide"><img src="cocacola2.png"></div>
+            <div class="swiper-slide"><img src="cocacola3.png"></div>
+            <div class="swiper-slide"><img src="cocacola4.png"></div>
+            <div class="swiper-slide"><img src="cocacola5.png"></div>
+            <div class="swiper-slide"><img src="cocacola6.png"></div>
+        </div>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
     </section>
-    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>
