@@ -47,10 +47,13 @@ header .logo{
 header .navigation{
     position:relative ;
     display:flex;
+    list-style-type: none;
 
 }
-header ,navigation li{
-    list-style: none;
+
+header .navigation li{
+    list-style-type: none;
+    
 
 }
 header .navigation li a{
@@ -110,8 +113,8 @@ header .navigation li a{
 
 
 }
-sci li{
-    list-style: none;
+.sci li{
+    list-style-type: none;
 }
 .sci li a{
     display: inline-block;
